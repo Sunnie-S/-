@@ -1,4 +1,3 @@
-import asyncio
 import pygame
 import random
 import os
@@ -61,7 +60,7 @@ pygame.mixer.music.set_volume(0.4)
 
 # font_name = pygame.font.match_font('arial')
 font_name = os.path.join("font.ttf")
-async def draw_text(surf, text, size, x, y):
+def draw_text(surf, text, size, x, y):
     font = pygame.font.Font(font_name, size)
     text_surface = font.render(text, True, WHITE)
     text_rect = text_surface.get_rect()
@@ -69,12 +68,12 @@ async def draw_text(surf, text, size, x, y):
     text_rect.top = y
     surf.blit(text_surface, text_rect)
 
-async def new_rock():
+def new_rock():
     r = Rock()
     all_sprites.add(r) 
     rocks.add(r)
     
-async def draw_health(surf, hp, x, y):
+def draw_health(surf, hp, x, y):
     if hp < 0:
         hp = 0
     BAR_LENGTH = 100
@@ -85,7 +84,7 @@ async def draw_health(surf, hp, x, y):
     pygame.draw.rect(surf, GREEN, fill_rect)
     pygame.draw.rect(surf, WHITE, outline_rect, 2)
 
-async def draw_lives(surf, lives, img, x, y):
+def draw_lives(surf, lives, img, x, y):
 
     for i in range(lives):
         img_rect = img.get_rect()
@@ -93,7 +92,7 @@ async def draw_lives(surf, lives, img, x, y):
         img_rect.y = y
         surf.blit(img, img_rect)
 
-async def draw_init(): 
+def draw_init(): 
     screen.blit(background_img, (0, 0))
     draw_text(screen, '太空生存戰', 64, WIDTH/2, HEIGHT/4)
     draw_text(screen, '按左右鍵或AD鍵操控飛船 按SPACE發射子彈', 22, WIDTH/2, HEIGHT/2)
