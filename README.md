@@ -22,7 +22,6 @@
 當左上角生命條的生命值達到0%時，右上角飛船就會減少一架。<br /> 
 當三架飛船都沒有被隕石摧毀了，遊戲便結束。<br /> 
 
-## Screenshots
-
+## 圖片
 ![Title screen](https://raw.githubusercontent.com/Sunnie-S/-/main/screenshots/start.png)
 ![Play screen](https://raw.githubusercontent.com/Sunnie-S/-/main/screenshots/play.png)
