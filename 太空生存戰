@@ -18,3 +18,8 @@
 ## 生命
 
 左上角有一條生命條，右上角有三架飛船。                                                    撞到越大的隕石，左上角生命條的生命值就會扣越多。                                            當左上角生命條的生命值達到0%時，右上角飛船就會減少一架。                                      當三架飛船都沒有被隕石摧毀了，遊戲便結束。
+
+## Screenshots
+
+![Title screen](https://raw.githubusercontent.com/Sunnie-S/-/main/screenshots/start.png)
+![Play screen](https://raw.githubusercontent.com/Sunnie-S/-/main/screenshots/play.png)
